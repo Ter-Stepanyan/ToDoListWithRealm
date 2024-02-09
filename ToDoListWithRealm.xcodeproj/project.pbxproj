@@ -16,6 +16,7 @@
 		CED6C7112B7653D500620BDC /* ToDoListWithRealmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6C7102B7653D500620BDC /* ToDoListWithRealmTests.swift */; };
 		CED6C71B2B7653D500620BDC /* ToDoListWithRealmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6C71A2B7653D500620BDC /* ToDoListWithRealmUITests.swift */; };
 		CED6C71D2B7653D500620BDC /* ToDoListWithRealmUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6C71C2B7653D500620BDC /* ToDoListWithRealmUITestsLaunchTests.swift */; };
+		EDEDCC54B12A65F49DD6A53E /* Pods_ToDoListWithRealm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545C23CC1373AC584A62650E /* Pods_ToDoListWithRealm.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D4F8020929689B602706CD8 /* Pods-ToDoListWithRealm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoListWithRealm.debug.xcconfig"; path = "Target Support Files/Pods-ToDoListWithRealm/Pods-ToDoListWithRealm.debug.xcconfig"; sourceTree = "<group>"; };
+		527189804E947D1BC4E1DC2A /* Pods-ToDoListWithRealm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoListWithRealm.release.xcconfig"; path = "Target Support Files/Pods-ToDoListWithRealm/Pods-ToDoListWithRealm.release.xcconfig"; sourceTree = "<group>"; };
+		545C23CC1373AC584A62650E /* Pods_ToDoListWithRealm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoListWithRealm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED6C6F62B7653D200620BDC /* ToDoListWithRealm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListWithRealm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED6C6F92B7653D200620BDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED6C6FB2B7653D200620BDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDEDCC54B12A65F49DD6A53E /* Pods_ToDoListWithRealm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18A4B280B272D608E43F4215 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D4F8020929689B602706CD8 /* Pods-ToDoListWithRealm.debug.xcconfig */,
+				527189804E947D1BC4E1DC2A /* Pods-ToDoListWithRealm.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2051F6EFA139585A71B54EF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				545C23CC1373AC584A62650E /* Pods_ToDoListWithRealm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CED6C6ED2B7653D200620BDC = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +105,8 @@
 				CED6C70F2B7653D500620BDC /* ToDoListWithRealmTests */,
 				CED6C7192B7653D500620BDC /* ToDoListWithRealmUITests */,
 				CED6C6F72B7653D200620BDC /* Products */,
+				18A4B280B272D608E43F4215 /* Pods */,
+				2051F6EFA139585A71B54EF0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CED6C7202B7653D500620BDC /* Build configuration list for PBXNativeTarget "ToDoListWithRealm" */;
 			buildPhases = (
+				2B840CFEE88F165C185FEB0E /* [CP] Check Pods Manifest.lock */,
 				CED6C6F22B7653D200620BDC /* Sources */,
 				CED6C6F32B7653D200620BDC /* Frameworks */,
 				CED6C6F42B7653D200620BDC /* Resources */,
+				634ECFA366ED2C5D63B7C86C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +278,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B840CFEE88F165C185FEB0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToDoListWithRealm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		634ECFA366ED2C5D63B7C86C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToDoListWithRealm/Pods-ToDoListWithRealm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToDoListWithRealm/Pods-ToDoListWithRealm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ToDoListWithRealm/Pods-ToDoListWithRealm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CED6C6F22B7653D200620BDC /* Sources */ = {
@@ -437,11 +505,14 @@
 		};
 		CED6C7212B7653D500620BDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D4F8020929689B602706CD8 /* Pods-ToDoListWithRealm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CRGZ46Q5T5;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ToDoListWithRealm/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -449,6 +520,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,11 +536,14 @@
 		};
 		CED6C7222B7653D500620BDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 527189804E947D1BC4E1DC2A /* Pods-ToDoListWithRealm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CRGZ46Q5T5;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ToDoListWithRealm/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -476,6 +551,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
